@@ -213,7 +213,7 @@ body {
     }
 }
 @media (max-width: 923px) {
-    .header .logo img {
+    .logo img {
         width: 100%;
     }
 }
