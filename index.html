@@ -1,8 +1,213 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>A</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Build Away! - The world’s best idle city simulator!">
+
+    <title>Build Away! - The world’s best idle city simulator!</title>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@futureplaygames">
+    <meta name="twitter:title" content="Page Title">
+    <meta name="twitter:description" content="Build Away! - The world’s best idle city simulator!">
+    <meta name="twitter:creator" content="@futureplaygames">
+    <meta name="twitter:image" content="http://www.buildawaygame.com/app_invite_preview.png">
+
+
+    <meta property="og:title" content="Build Away! - The world’s best idle city simulator!"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.buildawaygame.com/"/>
+    <meta property="og:image" content="http://www.buildawaygame.com/app_invite_preview.png"/>
+    <meta property="og:description" content="Build Away! - The world’s best idle city simulator!"/>
+
+    <link rel="icon" type="image/png" href="BrowserIcon.png" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="flexslider.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="jquery.flexslider-min.js"></script>
+    <script src="fontfaceobserver.js"></script>
+    <script>
+        var observeFont = function(fontName) {
+            var observer = new FontFaceObserver(fontName);
+            observer.check(null, 5000).then(function () {
+                $("body").addClass(fontName + "-ready")
+            });
+        }
+        observeFont('poetsenoneregular');
+        observeFont('montserratregular');
+        observeFont('bowlbyoneregular');
+    </script>
+    <script>
+        // Can also be used with $(document).ready()
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+    </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62596857-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script>
+        var trackOutboundLink = function(url) {
+            ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+                function () {
+                    document.location = url;
+                }
+            });
+        }
+        $(window).load(function() {
+          $("a.track").click(function(e) {
+              trackOutboundLink($(this).attr("href"));
+              return false;
+          })
+        })
+
+    </script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-A
+<section class="header container-fluid">
+    <div class="col-sm-12">
+        <div class="logo">
+            <img src="logo_header.png" alt="Build Away! - The world’s best idle city simulator!!">
+        </div>
+    </div>
+</section>
+<section class="section-install container">
+    <div class="col-sm-12">
+        <ul class="inline-list download-list">
+            <li class="btn-download-app btn-download-ios">
+                <a href="https://itunes.apple.com/app/id1079852672" class="track">
+                    <img src="icon_appstore.png" alt="Download on the AppStore">
+                </a>
+            </li>
+            <li class="btn-download-app btn-download-android">
+                <a href="https://play.google.com/store/apps/details?id=com.futureplay.city">
+                    <img alt="Get it on Google Play" src="en-play-badge.png" class="track"/>
+                </a>
+            </li>
+            <li class="social">
+                <a href="https://www.facebook.com/buildawaygame" class="track">
+                    <img src="icon_facebook.png" alt="Build Away - App Page">
+                </a>
+                <a href="https://www.twitter.com/buildawaygame" class="track">
+                    <img src="icon_twitter.png" alt="Build Away! - Twitter">
+                </a>
+                <a href="https://www.instagram.com/buildawaygame" class="track">
+                    <img src="icon_instagram.png" alt="Build Away! - Instagram">
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="section-trailer container-fluid">
+<img src="shotPhone.png" alt="Build Away!">
+    <!--
+    <div class="player-container">
+        <div id="ytplayer"><iframe width="560" height="315" src="https://www.youtube.com/embed/saNgZOrhbd0" frameborder="0" allowfullscreen></iframe></div>
+        <![endif]-->
+    </div>
+</section>
+<section class="section-description container-fluid">
+    <div class="row row-centered">
+        <div class="col-sm-12 col-md-6 col-centered">
+            <h1>
+                <p id='citybuilding'>City&nbsp;Building</p> For&nbsp;Everyone!
+            </h1>
+            <h3>
+                Build Away! - The world’s best idle city simulator!
+            </h3>
+            <img src="characters_copy.png" class="img-responsive visible-xs visible-sm img-both">
+            <ul>
+                <li>
+                    "Build Away!" is free to play online or offline!
+                </li>
+                <li>Automate your city and earn continuously while you’re away!
+                </li>
+                <li>
+                    Increase production by having carnivals and giving out 
+                    free ice-cream!
+                </li>
+                <li>
+                    Attract friends to help you grow and customize 
+                    your town!
+                </li>
+                <li>
+                    Prove your strategy with smart decisions on when to 
+                    upgrade and re-develop.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row col-chars">
+        <div class="col-md-2 col-md-offset-1 hidden-xs hidden-sm">
+            <img src="girl.png" class="img-responsive">
+        </div>
+        <div class="col-md-6 hidden-xs hidden-sm">
+        </div>
+        <div class="col-md-3 hidden-xs hidden-sm">
+            <img src="dad.png" class="img-responsive">
+        </div>
+    </div>
+</section>
+<section class="section-carousel container-fluid">
+    <div class="flexslider-container">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="screenshot1.png" />
+                </li>
+                <li>
+                    <img src="screenshot2.png" />
+                </li>
+                <li>
+                    <img src="screenshot3.png" />
+                </li>
+                <li>
+                    <img src="screenshot4.png" />
+                </li>
+                <li>
+                    <img src="screenshot5.png" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="section-footer container">
+    <div class="col-sm-12">
+        <p>
+            <a href="http://futureplaygames.com" class="track"><img src="futureplay_footerLogo.jpg"></a>
+        </p>
+        <p>
+            &copy; 2016 <a href="http://futureplaygames.com" class="track">Futureplay Ltd</a>. All rights reserved.
+        </p>
+        <p>
+            <a href="http://futureplaygames.com/privacypolicy.html" class="track">Privacy Policy</a> | <a href="http://futureplaygames.com/termsofservice.html" class="track">Terms of Service</a> | <a href="mailto:
+&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#102;&#117;&#116;&#117;&#114;&#101;&#112;&#108;&#097;&#121;&#103;&#097;&#109;&#101;&#115;&#046;&#099;&#111;&#109;">
+            Support</a>
+        </p>
+    </div>
+
+</section>
 </body>
 </html>
