@@ -8,6 +8,7 @@
 }
 .header .logo {
     text-align: center;
+    position: relative;
 }
 .row-centered {
     text-align:center;
@@ -22,6 +23,8 @@ section {
 }
 .section-install {
     text-align: center;
+    padding: 40px 0;
+    padding-bottom: 0;
 }
 
 .inline-list {
@@ -185,7 +188,7 @@ body {
     .header {
         height: 420px;
     }
-    section {
+    section:not(.header) {
         padding: 50px 0;
     }
     .section-trailer {
@@ -243,7 +246,6 @@ body {
 
 .arrow {
     position: absolute;
-    top: 90%;
 }
 
 .arrow-center {
@@ -264,4 +266,87 @@ body {
     0%   {top: 0px;}
     50%  {top: 12px;}
     100% {top: 0px;}
+}
+
+nav img {
+    width: 48px;
+    height: 48px;
+}
+.navbar-nav>li a {
+    padding: 0;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.navbar-nav>li {
+    display: inline-block;
+}
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin: 0;
+        text-align: right;
+    }
+}
+@media (max-width: 1085px) {
+    .header .logo img {
+        max-width: 100%;
+    }
+}
+.header .logo img {
+    margin: 0 auto;
+}
+@media (max-width: 1050px) {
+    .header {
+        height: 625px;
+    }
+}
+@media (max-width: 1010px) {
+    .header {
+        height: 600px;
+    }
+}
+@media (max-width: 970px) {
+    .header {
+        height: 575px;
+    }
+}
+@media (max-width: 930px) {
+    .header {
+        height: 550px;
+    }
+}
+@media (max-width: 890px) {
+    .header {
+        height: 525px;
+    }
+}
+@media (max-width: 850px) {
+    .header {
+        height: 500px;
+    }
+}
+@media (max-width: 810px) {
+    .header {
+        height: 475px;
+    }
+}
+@media (max-width: 770px) {
+    .header {
+        height: 450px;
+    }
+}
+@media (max-width: 730px) {
+    .header {
+        height: 425px;
+    }
+}
+@media (max-width: 690px) {
+    .header {
+        height: 400px;
+    }
+}
+#install h1 {
+    font-family: 'poetsenoneregular', Arial, sans-serif;
+    color: #17aaff;
+    padding-bottom: 10px; 
 }
