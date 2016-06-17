@@ -34,8 +34,8 @@ section {
     list-style: none;
     display: inline-block;
     margin-bottom: 2.5rem;
-    margin-right: 2.5rem;
 }
+
 .inline-list>li a {
     padding: 1.375rem;
 }
@@ -46,7 +46,7 @@ section {
     display: -moz-inline-stack;
     display: inline-block;
     vertical-align: middle;
-    zoom: 1;
+    zoom: 0.75;
     margin: 0 auto;
     list-style: none;
 }
@@ -188,7 +188,7 @@ body {
     .header {
         height: 420px;
     }
-    section:not(.header) {
+    section {
         padding: 50px 0;
     }
     .section-trailer {
@@ -234,7 +234,6 @@ body {
         width: 100%;
     }
 }
-
 #citybuilding {
     color: #f6c157;
     line-height: 36px;
@@ -267,24 +266,33 @@ body {
     50%  {top: 12px;}
     100% {top: 0px;}
 }
-
-nav img {
+.some img {
     width: 48px;
     height: 48px;
 }
-.navbar-nav>li a {
+.some ul>li a {
     padding: 0;
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
-.navbar-nav>li {
+.some ul>li {
     display: inline-block;
 }
+.some {
+    text-align: right;
+    position: absolute;
+    top: 0.1em;
+    padding: 0;
+}
+.some>ul {
+    padding: 0;
+    max-width: 100%;
+}
 @media (max-width: 768px) {
-    .navbar-nav {
-        margin: 0;
+    .some {
         text-align: right;
+        width: 100%;
     }
 }
 @media (max-width: 1085px) {
@@ -295,6 +303,7 @@ nav img {
 .header .logo img {
     margin: 0 auto;
 }
+/* The following media queries are for scaling header for multiple resolutions. */
 @media (max-width: 1050px) {
     .header {
         height: 625px;
@@ -343,6 +352,39 @@ nav img {
 @media (max-width: 690px) {
     .header {
         height: 400px;
+    }
+}
+@media (max-width: 650px) {
+    .header {
+        height: 375px;
+    }
+}
+@media (max-width: 610px) {
+    .header {
+        height: 350px;
+    }
+}
+@media (max-width: 570px) {
+    .header {
+        height: 325px;
+    }
+}
+@media (max-width: 530px) {
+    .header {
+        height: 300px;
+    }
+}
+@media (max-width: 490px) {
+    .header {
+        height: 275px;
+    }
+    .arrow-center-header {
+        margin-top: -0.5em;
+    }
+}
+@media (max-width: 450px) {
+    .header {
+        height: 250px;
     }
 }
 #install h1 {
